@@ -1,0 +1,37 @@
+\begin{table}[h]
+\centering
+\caption{CO2 per capita and GDP per capita (log-log)}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & (1) OLS 2005 & (2) OLS 2024 & (3) FD & (4) FD +2 lags & (5) FD +6 lags & (6) TWFE \\
+ &  &  &  &  &  &  \\
+\midrule
+ln(GDP pc) & 1.214*** & 1.058*** &  &  &  & 0.599*** \\
+ & (0.076) & (0.065) &  &  &  & (0.080) \\
+d ln(GDP pc) &  &  & 0.473*** & 0.453*** & 0.482*** &  \\
+ &  &  & (0.057) & (0.062) & (0.069) &  \\
+d ln(GDP pc), L1 &  &  &  & -0.044 & -0.034 &  \\
+ &  &  &  & (0.046) & (0.049) &  \\
+d ln(GDP pc), L2 &  &  &  & 0.041 & -0.009 &  \\
+ &  &  &  & (0.028) & (0.035) &  \\
+d ln(GDP pc), L3 &  &  &  &  & 0.072* &  \\
+ &  &  &  &  & (0.039) &  \\
+d ln(GDP pc), L4 &  &  &  &  & 0.046 &  \\
+ &  &  &  &  & (0.046) &  \\
+d ln(GDP pc), L5 &  &  &  &  & -0.052 &  \\
+ &  &  &  &  & (0.049) &  \\
+d ln(GDP pc), L6 &  &  &  &  & 0.075* &  \\
+ &  &  &  &  & (0.041) &  \\
+Time trend &  &  & -0.001*** & -0.001*** & -0.001*** &  \\
+ &  &  & (0.000) & (0.000) & (0.000) &  \\
+Constant & -10.857*** & -9.603*** & 0.014*** & 0.015*** & 0.014** &  \\
+ & (0.693) & (0.634) & (0.004) & (0.005) & (0.006) &  \\
+ &  &  &  &  &  &  \\
+Country FE & No & No & No & No & No & Yes \\
+Year FE & No & No & No & No & No & Yes \\
+SE type & Robust & Robust & Clustered & Clustered & Clustered & Clustered \\
+Observations & 183 & 178 & 5,879 & 5,507 & 4,763 & 6,065 \\
+R-squared & 0.633 & 0.629 & 0.044 & 0.042 & 0.046 & 0.222 \\
+\bottomrule
+\end{tabular}
+\end{table}
